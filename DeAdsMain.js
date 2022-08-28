@@ -13,6 +13,56 @@ module.exports = [
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "supplier",
+				"type": "address"
+			}
+		],
+		"name": "NewSupplierAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "tag",
+				"type": "string"
+			}
+		],
+		"name": "NewTagAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "ad",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "supplier",
+				"type": "address"
+			}
+		],
+		"name": "RecommendationClicked",
+		"type": "event"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -85,9 +135,8 @@ module.exports = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
+		"stateMutability": "payable",
+		"type": "receive"
 	},
 	{
 		"inputs": [],
